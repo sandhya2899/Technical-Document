@@ -36,26 +36,6 @@ It uses Optical Character Recognition (OCR) to extract key terms from images, re
 
 ---
 
-### 📌 Example Scenario: “Why Is ₹2,000 Deducted from My Salary?”
-
-Let’s say an employee uploads a screenshot of their payslip and asks:  
-> “Why is ₹2,000 less credited to my account this month?”
-
-Snap and Ask processes the image and query by:
-
-1. Extracting key text from the image — including deduction codes, amounts, and dates  
-2. Searching for matching HR policies (e.g., “Clause 4.1 – Half-day salary deduction for unapproved leave”)  
-3. Pulling relevant data from the company’s HR portal such as:
-   - Leave balance and attendance logs  
-   - Pending or rejected approvals  
-   - Email/chat context with HR (if integrated and allowed)  
-
-4. Constructing a watsonx.ai-style prompt to contextualize all this data and respond with:
-
-> “Your salary was reduced by ₹2,000 due to a half-day leave taken on April 15, which exceeded your leave balance. Your manager’s approval was recorded on April 17, past the monthly cutoff. This aligns with the Leave and Attendance Policy, Section 4.1.”
-
-This scenario showcases the assistant’s ability to combine image understanding, document retrieval, and real-time system data into a single, explainable output. It transforms what would be a tedious back-and-forth with HR into a seamless, AI-powered experience — grounded in IBM’s mission to build trustworthy and intelligent enterprise systems using watsonx.ai.
-
 ## ✅ Included Components
 
 ### 🔹 IBM watsonx.ai  
@@ -113,7 +93,6 @@ Answer:
 
 This flexible structure allows the assistant to adapt to various document types and employee concerns.
 
----
 
 ### 🔁 Prompt Variation by Use Case
 
@@ -125,13 +104,14 @@ This flexible structure allows the assistant to adapt to various document types 
 
 Prompt templates are dynamically adjusted based on input type, enabling consistent performance across a wide range of HR document scenarios.
 
+---
+
 ## 🧪 Simulated Scenarios: How Snap and Ask Responds
 
 The following scenarios illustrate how Snap and Ask simulates HR query resolution using a combination of OCR, similarity-based retrieval, and foundation model generation via IBM watsonx.ai.
 
 Each example shows how the assistant interprets a user question, extracts visual text data, searches the HR policy base, and composes a grounded response.
 
----
 
 ### 📄 Scenario 1: Payslip Deduction Clarification
 
@@ -154,7 +134,6 @@ Each example shows how the assistant interprets a user question, extracts visual
 **Generated Response:**
 > ₹2,000 was deducted due to one unapproved leave on April 15th. As per Section 4.1 of the Leave Policy, a full day’s salary is deducted for each such instance. Approval was not granted before the payroll processing date.
 
----
 
 ### 📄 Scenario 2: Offer Letter Clause Confusion
 
@@ -171,7 +150,6 @@ Each example shows how the assistant interprets a user question, extracts visual
 **Generated Response:**
 > Clause 6.2 indicates that your variable pay is not fixed and will depend on company results and your performance rating. It’s not guaranteed, and the payout amount can vary.
 
----
 
 ### 📄 Scenario 3: Leave Status from Portal Screenshot
 
@@ -193,7 +171,6 @@ Status: Rejected
 **Generated Response:**
 > Your casual leave request (ID CL-9023) was rejected because it exceeded the monthly limit of two casual leaves, as outlined in the Leave and Attendance Policy.
 
----
 
 ### 📄 Scenario 4: Bonus Calculation Clarification
 
@@ -213,11 +190,9 @@ Bonus FY 2023–24: ₹50,000
 **Generated Response:**
 > Your bonus this year was ₹50,000 compared to ₹65,000 last year, primarily due to a performance rating of 3. According to the bonus policy, lower ratings correspond to reduced payout brackets.
 
----
 
 These scenarios showcase the assistant’s ability to simulate intelligent, grounded interactions — leveraging OCR, HR knowledge bases, and prompt-based generation in watsonx.ai to create clear and contextual responses. While the implementation is conceptual, the examples mirror realistic enterprise HR queries and demonstrate IBM watsonx.ai’s potential in solving them.
 
----
 
 ---
 
