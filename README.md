@@ -1,5 +1,4 @@
-# Technical-Document
-
+# Snap and Ask – A RAG-Powered HR Assistant Built on IBM watsonx.ai
 
 ## 1. Overview
 
